@@ -1,6 +1,6 @@
 # AI FAQ Assistant API
 
-The **AI FAQ Assistant API** is a robust RESTful backend application designed to enable users to create and manage FAQs while leveraging Google Gemini AI (`gemini-2.0-flash`) to generate answers to arbitrary user questions and automatically generate structured FAQ question-and-answer pairs.
+The **AI FAQ Assistant API** is a robust RESTful backend application designed to enable users to create and manage FAQs while leveraging Google Gemini AI (`gemini-3.5-flash-lite`) to generate answers to arbitrary user questions and automatically generate structured FAQ question-and-answer pairs.
 
 The project is built using **Node.js, Express.js, MongoDB (via Mongoose), JWT Authentication, bcrypt, and the official Google Gemini SDK (`@google/genai`)**. It follows the standard **MVC (Model-View-Controller) Architecture**.
 
@@ -16,7 +16,7 @@ The project is built using **Node.js, Express.js, MongoDB (via Mongoose), JWT Au
     *   **Full CRUD Operations**: Private endpoints for creating, updating, and deleting FAQs (with owner verification), and public endpoints for reading them.
     *   **Category Constraints**: Valid categories are strictly validated: `Technology`, `Education`, `Health`, `Banking`, `General`.
 3.  **AI Answer Generator (Google Gemini)**:
-    *   **Answer Endpoint**: Provides direct, concise answers using the state-of-the-art `gemini-2.0-flash` model.
+    *   **Answer Endpoint**: Provides direct, concise answers using the state-of-the-art `gemini-3.5-flash-lite` model.
 4.  **AI FAQ Generator (Google Gemini)**:
     *   **Structured FAQ Generation**: Takes a topic and generates a perfectly structured FAQ pair (`question` & `answer`) using Gemini's Structured JSON outputs (guaranteeing exact schema compliance).
 5.  **FAQ Search**:
